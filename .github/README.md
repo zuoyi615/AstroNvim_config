@@ -1,32 +1,32 @@
-# AstroNvim User Configuration Example
+# AstroNvim User Custom Configuration
 
-A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
+A user configuration template for AstroNvim, forking from [template](https://github.com/AstroNvim/user_example)
 
-## 🛠️ Installation
+### Community Plugins
 
-#### Make a backup of your current nvim and shared folder
+```lua
+return {
+  -- Add the community repository of plugin specifications
+  "AstroNvim/astrocommunity",
+  -- example of imporing a plugin, comment out to use it or add your own
+  -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
-```shell
-mv ~/.config/nvim ~/.config/nvim.bak
-mv ~/.local/share/nvim ~/.local/share/nvim.bak
+  -- { import = "astrocommunity.colorscheme.catppuccin" },
+  -- { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.vue" },
+  { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.colorscheme.tokyonight" },
+  { import = "astrocommunity.colorscheme.gruvbox" },
+  { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+}
 ```
-
-#### Clone AstroNvim
-
-```shell
-git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-```
-
-#### Create a new user repository from this template
-
-Press the "Use this template" button above to create a new repository to store your user configuration.
-
-You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
-
 #### Clone the repository
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim/lua/user
+# linux or macos
+git clone https://github.com/zuoyi615/AstroNvim_config ~/.config/nvim/lua/user
 ```
 
 #### Start Neovim
