@@ -18,4 +18,7 @@ return {
   { import = "astrocommunity.colorscheme.gruvbox" },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  { import = "astrocommunity.utility.transparent-nvim" },
+  { import = "astrocommunity.git.git-blame-nvim" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
 }
